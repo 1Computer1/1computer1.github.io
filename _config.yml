@@ -21,7 +21,7 @@ email: "onecomputer00@gmail.com"
 description: >- # this means to ignore newlines
   1Computer's blog of fun things.
 github_username: "1Computer1"
-url: "https://example.com"
+url: "https://1computer1.github.io"
 baseurl: "/"
 minimal_mistakes_skin: "dirt"
 search: true
@@ -35,7 +35,7 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-repository: example/example.github.io
+repository: 1Computer1/1Computer1.github.io
 
 include:
   - _pages
