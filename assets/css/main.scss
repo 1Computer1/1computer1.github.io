@@ -35,6 +35,14 @@ $base0f: #a3685a;
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+#main {
+    max-width: 80%;
+}
+
+.masthead__inner-wrap {
+    max-width: 80%;
+}
+
 .page__content {
     font-size: $type-size-6;
 }
