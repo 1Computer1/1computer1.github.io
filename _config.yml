@@ -27,13 +27,14 @@ baseurl: "/"
 minimal_mistakes_skin: "dirt"
 search: true
 search_full_content: true
+logo: "/assets/images/lambda.png"
 og_image: "/assets/images/lambda.png"
 
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
-permalink: /:categories/:title/
+permalink: /posts/:categories/:title/
 paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 repository: 1Computer1/1computer1.github.io
@@ -64,7 +65,6 @@ plugins:
 
 author:
   name: "Comp"
-  avatar: "/assets/images/lambda.png"
   bio: >-
     A programmer with an interest in programming languages and types.
     Haskeller for fun.
@@ -92,9 +92,10 @@ defaults:
       read_time: false
       comments: false
       share: false
-      related: false
+      related: true
       toc: true
       toc_label: "Contents"
+      toc_sticky: true
   # _pages
   - scope:
       path: "_pages"

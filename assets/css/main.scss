@@ -3,16 +3,17 @@
 
 @charset "utf-8";
 
-$background-color: #f3f3f3;
-$text-color: #202020;
-$muted-text-color: #a1a1a1;
-$primary-color: #202020;
-$border-color: #a1a1a1;
-$footer-background-color: #202020;
-$link-color: #202020;
-$masthead-link-color: $text-color;
-$masthead-link-color-hover: $text-color;
-$navicon-link-color-hover: mix(#fff, $text-color, 80%);
+$background-color: #fff0f0;
+$invert-text-color: #ffffff;
+$text-color: #222222;
+$muted-text-color: #222222;
+$primary-color: #8d374d;
+$border-color: #8d374d;
+$footer-background-color: #8d374d;
+$link-color: #222222;
+$masthead-link-color: $background-color;
+$masthead-link-color-hover: $background-color;
+$navicon-link-color-hover: $background-color;
 
 $base00: #1d1f21;
 $base01: #282a2e;
@@ -48,6 +49,56 @@ $base0f: #a3685a;
     margin-top: 1em;
 }
 
+.page__footer {
+    color: $invert-text-color;
+}
+
 .page__footer-follow .social-icons .svg-inline--fa {
     color: inherit;
+}
+
+.masthead {
+    border: none;
+}
+
+.masthead, .masthead__menu, .greedy-nav {
+    background-color: $footer-background-color;
+}
+
+.greedy-nav a, .search__toggle {
+    color: $invert-text-color;
+}
+
+.greedy-nav .visible-links a::before {
+    background-color: $background-color;
+    -webkit-transition: none;
+    transition: none;
+    visibility: hidden;
+}
+
+.visually-hidden, .search__toggle {
+    -webkit-transition: none;
+    transition: none;
+
+    &:hover {
+        color: $invert-text-color;
+    }
+}
+
+.search-content .search-input {
+    font-size: $type-size-3;
+}
+
+.archive__item-title a {
+    text-decoration: none;
+    color: $text-color;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+p > code {
+    background-color: $base00;
+    color: $base05;
 }
