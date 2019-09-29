@@ -13,13 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "λ"
+title: "1Computer"
 title_separator: "—"
 masthead_title: "λ"
 name: "1Computer"
 email: "onecomputer00@gmail.com"
 description: >- # this means to ignore newlines
-  1Computer's blog of fun things.
+  1Computer's personal website.
+  Includes a blog on various topics in programming and a portfolio of cool projects.
 github_username: "1Computer1"
 url: "https://1computer1.github.io"
 baseurl: "/"
@@ -33,9 +34,9 @@ markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /page:num/
-repository: 1Computer1/1Computer1.github.io
+repository: 1Computer1/1computer1.github.io
 
 include:
   - _pages
@@ -64,7 +65,10 @@ plugins:
 author:
   name: "1Computer"
   avatar: "/assets/images/lambda.png"
-  bio: "I'm a programmer. I like Haskell and other fun things."
+  bio: >-
+    A programmer with an interest in programming languages and types.
+    Haskeller for fun.
+    Undergraduate at the University of Toronto.
   location: "Toronto, CA"
   links:
     - label: "GitHub"
@@ -98,10 +102,3 @@ defaults:
     values:
       layout: single
       author_profile: true
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
