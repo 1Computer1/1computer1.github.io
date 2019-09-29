@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: "1Computer"
 title_separator: "—"
-masthead_title: "λ"
+masthead_title: "Home"
 name: "1Computer"
 email: "onecomputer00@gmail.com"
 description: >- # this means to ignore newlines
@@ -102,3 +102,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+tag_archive:
+  type: liquid
+  path: /blog/
