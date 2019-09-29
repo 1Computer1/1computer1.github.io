@@ -13,13 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "1Computer"
+title: "Comp"
 title_separator: "—"
 masthead_title: "Home"
-name: "1Computer"
+name: "Comp"
 email: "onecomputer00@gmail.com"
 description: >- # this means to ignore newlines
-  1Computer's personal website.
+  Comp's personal website.
   Includes a blog on various topics in programming and a portfolio of cool projects.
 github_username: "1Computer1"
 url: "https://1computer1.github.io"
@@ -63,7 +63,7 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name: "1Computer"
+  name: "Comp"
   avatar: "/assets/images/lambda.png"
   bio: >-
     A programmer with an interest in programming languages and types.
