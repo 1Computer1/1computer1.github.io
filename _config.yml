@@ -39,6 +39,9 @@ paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 repository: 1Computer1/1computer1.github.io
 
+head_scripts:
+  - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
 include:
   - _pages
 
