@@ -74,8 +74,12 @@ $base0f: #a3685a;
     background-color: $footer-background-color;
 }
 
-.greedy-nav a, .search__toggle {
+.greedy-nav a, .search__toggle, .greedy-nav__toggle {
     color: $invert-text-color;
+}
+
+.hidden-links a {
+    color: $text-color;
 }
 
 .greedy-nav .visible-links a::before {
@@ -85,13 +89,27 @@ $base0f: #a3685a;
     visibility: hidden;
 }
 
-.visually-hidden, .search__toggle {
+.visually-hidden, .search__toggle, .greedy-nav__toggle {
     -webkit-transition: none;
     transition: none;
 
     &:hover {
         color: $invert-text-color;
     }
+}
+
+.navicon, .navicon::before, .navicon::after {
+    -webkit-transition: none;
+    transition: none;
+    background: $invert-text-color;
+
+    &:hover {
+        background: $invert-text-color;
+    }
+}
+
+.greedy-nav__toggle:hover .navicon, .greedy-nav__toggle:hover .navicon::before, .greedy-nav__toggle:hover .navicon::after {
+    background: $invert-text-color;
 }
 
 .search-content .search-input {
