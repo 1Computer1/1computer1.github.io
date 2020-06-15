@@ -57,7 +57,7 @@ sudo apt-get update
 sudo apt-get install -y cabal-install-XXX ghc-YYY
 ```
 
-# Regarding cabal's Documentation
+# Using cabal
 
 [cabal](https://www.haskell.org/cabal/users-guide/intro.html)'s documentation is a bit long-winded, and it has a long history, so much of what you might find online might be outdated. So, I'll direct you to the important parts of the documentation:
 
@@ -66,6 +66,23 @@ sudo apt-get install -y cabal-install-XXX ghc-YYY
 - [Section 5.4](https://www.haskell.org/cabal/users-guide/nix-local-build.html#commands) lists many of the commands you can use.  
 
 Note that many commands are prefixed with `v2-` or `new-`. In cabal versions 3.0.0.0 and above, the prefix is no longer necessary.  
+
+# Memory Usage
+
+A known problem with GHC is that it takes up a lot of memory when compiling. If you are working in a low-memory environment (a VPS, a Raspberry PI, an old laptop), then you'll most likely run out of memory compiling large libraries or executables (such as an IDE engine from below).  
+
+Using cabal, append `--ghc-options="+RTS -M<memory> -RTS"` to your commands. For example, `cabal build --ghc-options="+RTS -M600M -RTS"` to build a project without using more than 600 megabytes.  
+
+Unfortunately, I do not know of a Stack-specific way to limit its memory usage while installing. You can set the maximum number of parallel jobs with `-j<number>` e.g. `stack build -j1`, but this does not limit memory usage.  
+
+Another thing you can do is set the `GHCRTS` environment variable:  
+
+```sh
+GHCRTS='-M<memory>'
+export GHCRTS
+```
+
+This will apply it to all GHC compiled programs. However, if a program was not compiled to be compatibile with RTS options, you will get an error and should remove the environment variable.  
 
 # The IDE Situation
 
