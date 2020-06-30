@@ -67,6 +67,8 @@ sudo apt-get install -y cabal-install-XXX ghc-YYY
 
 Note that many commands are prefixed with `v2-` or `new-`. In cabal versions 3.0.0.0 and above, the prefix is no longer necessary.  
 
+A contrast with Stack is that cabal does not have project templates readily available. You can use the [summoner](https://github.com/kowainik/summoner) CLI application to setup new cabal or Stack projects!  
+
 # Memory Usage
 
 A known problem with GHC is that it takes up a lot of memory when compiling. If you are working in a low-memory environment (a VPS, a Raspberry PI, an old laptop), then you'll most likely run out of memory compiling large libraries or executables (such as an IDE engine from below).  
@@ -82,7 +84,7 @@ GHCRTS='-M<memory>'
 export GHCRTS
 ```
 
-This will apply it to all GHC compiled programs. However, if a program was not compiled to be compatibile with RTS options, you will get an error and should remove the environment variable.  
+This will apply it to all GHC compiled programs. However, if a program was not compiled to be compatible with RTS options, you will get an error and should remove the environment variable.  
 
 # The IDE Situation
 
@@ -96,11 +98,14 @@ Currently, the IDE situation in Haskell is a little bit disappointing, with thin
 
 - [ghcid](https://github.com/ndmitchell/ghcid) is a simple application that uses GHCi to show errors and warnings in your code. There are plugins for various editors.
 
-- [ghcide](https://github.com/digital-asset/ghcide), [haskell-ide-engine](https://github.com/haskell/haskell-ide-engine) (HIE), and [haskell-language-server](https://github.com/haskell/haskell-language-server) (HLS). The history of these three, you can read [here](https://neilmitchell.blogspot.com/2020/01/one-haskell-ide-to-rule-them-all.html). The gist of it is that ghcide and HIE has been consolidated into HLS. I do not recommend using it at the moment because it is still in early stages, but once its mature, it will probably be the standard IDE integration tool, so keep an eye on it! Various editors are supported.
+- [ghcide](https://github.com/digital-asset/ghcide), [haskell-ide-engine](https://github.com/haskell/haskell-ide-engine) (HIE), and [haskell-language-server](https://github.com/haskell/haskell-language-server) (HLS). The history of these three, you can read [here](https://neilmitchell.blogspot.com/2020/01/one-haskell-ide-to-rule-them-all.html). The gist of it is that ghcide and HIE has been consolidated into HLS. HLS uses a plugin system, which means it includes many different tools within it, such as code diagnostics, linters, and formatters. If you are mostly interested in code diagnostics, then ghcide can be used by itself. I do not recommend using HLS at the moment because it is still in early stages, but once its mature, it will probably be the standard IDE integration tool, so keep an eye on it! Various editors are supported.
 
 ## Linting and Formatting
 
-There's really only one linter that I know of, which is [hlint](https://github.com/ndmitchell/hlint). It works fairly well and has plugins for various editors, such as [VSCode](https://marketplace.visualstudio.com/items?itemName=hoovercj.haskell-linter). It should be also integrated in HIE and HLS eventually.  
+There are two big linters I know of:
+
+- [hlint](https://github.com/ndmitchell/hlint), which works fairly well and has plugins for various editors, such as [VSCode](https://marketplace.visualstudio.com/items?itemName=hoovercj.haskell-linter).
+- [Stan](https://github.com/kowainik/stan), which is actually a recently released tool. It can generate pretty reports too.
 
 As for formatting, I do not use a formatter myself, but here are some that I've seen being used:
 
