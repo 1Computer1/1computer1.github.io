@@ -1,6 +1,6 @@
 ---
 title: "Installing Haskell in Current Year"
-date: 2020-06-12
+date: 2020-07-23
 tags: Haskell
 ---
 
@@ -24,16 +24,19 @@ I'll also touch on the current IDE integration situation in the Haskell ecosyste
 
 As we all know, Windows is a pain for development. In fact, at the time of this writing, I've had to guide a friend through several methods to install GHC and each one of them came up with an error of some kind. So, you probably should use [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/) if you haven't been using that already. Then, just skip right down to the Linux section and maybe configure your favorite editor like [VSCode to work in WSL](https://code.visualstudio.com/docs/remote/wsl).  
 
-If you're set on sticking to Windows though, here are two ways to get started with Haskell.  
-
+If you're set on sticking to Windows though, here are some ways to get started with Haskell.  
 
 ## Chocolatey
 
 The recommended method to install GHC and cabal on Windows at the moment is through [Chocolatey](https://chocolatey.org/). You can simply follow the [instructions on the Haskell website](https://www.haskell.org/platform/windows.html).  
 
+## ghcups
+
+[ghcups](https://github.com/kakkun61/ghcups) manages GHC and cabal installations and lets you switch between different versions. It is similar to [ghcup](https://gitlab.haskell.org/haskell/ghcup-hs) (see below).  
+
 ## Stack
 
-[Stack](https://docs.haskellstack.org/en/stable/README/) is tool for developing Haskell projects, meant to be an alternative to cabal. It is extremely simple to start up, simply click on that link and get the installer. Stack is quite useful on Windows since it manages multiple versions of GHC automatically as a standalone application.  
+[Stack](https://docs.haskellstack.org/en/stable/README/) is tool for developing Haskell projects, meant to be an alternative to cabal. It is very simple to start up, simply click on that link and get the installer.  
 
 # On Linux/macOS
 
@@ -90,28 +93,28 @@ This will apply it to all GHC compiled programs. However, if a program was not c
 
 ## Integration
 
-Currently, the IDE situation in Haskell is a little bit disappointing, with things being difficult to get working. I'll list some options you have in order of how quickly you can probably get it working:
+Currently, the IDE situation in Haskell isn't amazing, but much better than what it used to be. I'll list some options you have in order of how quickly you can probably get it working:  
 
 - [Simple GHC (Haskell) Integration](https://marketplace.visualstudio.com/items?itemName=dramforever.vscode-ghc-simple) is a plugin for VSCode. It uses GHCi to do its thing, which means there's no extra tools to install other than the extension, and it should work on all platforms. I highly recommend this for most people.
 
-- [haskell-mode](https://github.com/haskell/haskell-mode) is an Emacs mode for Haskell. If you're using Emacs, you can install this, I'd hope.
+- [haskell-mode](https://github.com/haskell/haskell-mode) is an Emacs mode for Haskell. You can take a look at the link for installation instructions.
+
+- [haskell-language-server](https://github.com/haskell/haskell-language-server) is a high power tool that uses the language server protocol, so it can integrate with any editor that supports LSP. HLS uses a plugin system, which means it includes many different tools within it, such as code diagnostics, linters, and formatters. There are prebuilt binaries available for Windows, Linux, and macOS. The [VSCode extension](https://marketplace.visualstudio.com/items?itemName=alanz.vscode-hie-server) will also download the binaries automatically for you. HLS is currently a work-in-progress, but is completely usable.
 
 - [ghcid](https://github.com/ndmitchell/ghcid) is a simple application that uses GHCi to show errors and warnings in your code. There are plugins for various editors.
 
-- [ghcide](https://github.com/digital-asset/ghcide), [haskell-ide-engine](https://github.com/haskell/haskell-ide-engine) (HIE), and [haskell-language-server](https://github.com/haskell/haskell-language-server) (HLS). The history of these three, you can read [here](https://neilmitchell.blogspot.com/2020/01/one-haskell-ide-to-rule-them-all.html). The gist of it is that ghcide and HIE has been consolidated into HLS. HLS uses a plugin system, which means it includes many different tools within it, such as code diagnostics, linters, and formatters. If you are mostly interested in code diagnostics, then ghcide can be used by itself. I do not recommend using HLS at the moment because it is still in early stages, but once its mature, it will probably be the standard IDE integration tool, so keep an eye on it! Various editors are supported.
-
 ## Linting and Formatting
 
-There are two big linters I know of:
+Linters:  
 
 - [hlint](https://github.com/ndmitchell/hlint), which works fairly well and has plugins for various editors, such as [VSCode](https://marketplace.visualstudio.com/items?itemName=hoovercj.haskell-linter).
-- [Stan](https://github.com/kowainik/stan), which is actually a recently released tool. It can generate pretty reports too.
+- [Stan](https://github.com/kowainik/stan), a more in-depth static code analyzer. It can generate pretty reports for your project.
 
-As for formatting, I do not use a formatter myself, but here are some that I've seen being used:
+Formatters:  
 
 - [brittany](https://github.com/lspitzner/brittany/)
 - [floskell](https://github.com/ennocramer/floskell)
-- [ormolu](https://github.com/tweag/ormolu) which uses a one "true" style.
+- [ormolu](https://github.com/tweag/ormolu) which uses a one "true" style and is not configurable.
 - [stylish-haskell](https://github.com/jaspervdj/stylish-haskell) which formats tedious things like import statements, pragmas, alignment, etc.
 
 # Conclusion
