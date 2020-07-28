@@ -1,6 +1,6 @@
 ---
 title: "Installing Haskell in Current Year"
-date: 2020-07-23
+date: 2020-07-28
 tags: Haskell
 ---
 
@@ -99,7 +99,7 @@ Currently, the IDE situation in Haskell isn't amazing, but much better than what
 
 - [haskell-mode](https://github.com/haskell/haskell-mode) is an Emacs mode for Haskell. You can take a look at the link for installation instructions.
 
-- [haskell-language-server](https://github.com/haskell/haskell-language-server) is a high power tool that uses the language server protocol, so it can integrate with any editor that supports LSP. HLS uses a plugin system, which means it includes many different tools within it, such as code diagnostics, linters, and formatters. There are prebuilt binaries available for Windows, Linux, and macOS. The [VSCode extension](https://marketplace.visualstudio.com/items?itemName=alanz.vscode-hie-server) will also download the binaries automatically for you. HLS is currently a work-in-progress, but is completely usable.
+- [haskell-language-server](https://github.com/haskell/haskell-language-server) is a high power tool that uses the language server protocol, so it can integrate with any editor that supports LSP. HLS uses a plugin system, which means it includes many different tools within it, such as code diagnostics, linters, and formatters. There are prebuilt binaries available for Windows, Linux, and macOS. The [VSCode extension](https://marketplace.visualstudio.com/items?itemName=haskell.haskell) will also download the binaries automatically for you. HLS is currently a work-in-progress, but is completely usable.
 
 - [ghcid](https://github.com/ndmitchell/ghcid) is a simple application that uses GHCi to show errors and warnings in your code. There are plugins for various editors.
 
