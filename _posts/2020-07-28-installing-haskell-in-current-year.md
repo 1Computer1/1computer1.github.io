@@ -13,7 +13,7 @@ I bet you've seen [this post](https://reddit.com/r/haskell/comments/guecax/confu
 For clarification:
 
 - GHC is the Glasgow Haskell Compiler. It is *the* compiler for working with Haskell.
-- [cabal](https://www.haskell.org/cabal/users-guide/intro.html) (or cabal-install) is the build tool for building your projects and managing dependencies, among other things. Not to be confused with Cabal, which is the backend library used by cabal.
+- [cabal](https://cabal.readthedocs.io/) (or cabal-install) is the build tool for building your projects and managing dependencies, among other things. Not to be confused with Cabal, which is the backend library used by cabal.
 - [Stack](https://docs.haskellstack.org/en/stable/README/) is an alternative to cabal, created back when cabal used to be much worse at doing its job.
 
 As for whether you should use cabal or Stack, this is a point of contention in the Haskell community. But, if you are starting out in Haskell, it really does not matter which you choose, since they do the same thing in the end: compiling your code. You can always try the other later, or even use both depending on your needs (I do this!). If you are interested in the differences, take a look [here](https://gist.github.com/merijn/8152d561fb8b011f9313c48d876ceb07).  
@@ -59,18 +59,6 @@ sudo add-apt-repository -y ppa:hvr/ghc
 sudo apt-get update
 sudo apt-get install -y cabal-install-XXX ghc-YYY
 ```
-
-# Using cabal
-
-[cabal](https://www.haskell.org/cabal/users-guide/intro.html)'s documentation is a bit long-winded, and it has a long history, so much of what you might find online might be outdated. So, I'll direct you to the important parts of the documentation:
-
-- [Section 3.1](https://www.haskell.org/cabal/users-guide/developing-packages.html) tells you how to start a project.
-- [Section 5.1](https://www.haskell.org/cabal/users-guide/nix-local-build.html) tells you how to build and run a project.
-- [Section 5.4](https://www.haskell.org/cabal/users-guide/nix-local-build.html#commands) lists many of the commands you can use.  
-
-Note that many commands are prefixed with `v2-` or `new-`. In cabal versions 3.0.0.0 and above, the prefix is no longer necessary.  
-
-A contrast with Stack is that cabal does not have project templates readily available. You can use the [summoner](https://github.com/kowainik/summoner) CLI application to setup new cabal or Stack projects!  
 
 # Memory Usage
 
