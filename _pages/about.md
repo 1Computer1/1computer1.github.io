@@ -11,10 +11,10 @@ Hi! My interests include:
 - Trying to learn type theory.
 
 [Check me out on Github!](https://github.com/1Computer1)  
-I mostly write little libraries and tools for Discord bots.  
+I mostly write Haskell, TypeScript, and things related to programming languages or Discord bots.  
 
 My non-programming interests include:
 
-- Playing rogue-lite games.
-- Creating maps on osu!
-- Enjoying anime and manga.
+- Playing roguelite games.
+- Creating difficult, enjoyable maps on osu!.
+- Enjoying Japanese media like anime and manga. Touhou is my favorite!
