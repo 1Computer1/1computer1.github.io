@@ -44,7 +44,7 @@ class ReadBox<T> {
 }
 ```
 
-As a refresher, we write `Dog <: Animal` to mean `Dog` is a subtype of (aka "extends" in TypeScript) `Animal`.
+As a refresher, we write `Dog extends Animal` to mean `Dog` is a subtype of `Animal`[^extends].
 
 Then, the question is, does it follow that `ReadBox<Dog>` is a subtype of `ReadBox<Animal>`? Well, if we want this to be true, it should be that whenever we want to use a `ReadBox<Animal>`, we can instead give it a `ReadBox<Dog>` and everything should work.
 
@@ -57,7 +57,7 @@ const dogBox: ReadBox<Dog> = new ReadBox(new Dog());
 isLivingInBox(dogBox);
 ```
 
-And we can see that there really is nothing that stops this from being correct. No matter what, as long as the class extends `Animal` and therefore has the `isLiving` method, it works. Because of the fact that for types `T, U` where `T <: U`, it follows that `ReadBox<T> <: ReadBox<U>`, we say that `ReadBox` is *covariant* in its type parameter[^one_param]: it preserves the subtyping relationship.
+And we can see that there really is nothing that stops this from being correct. No matter what, as long as the class extends `Animal` and therefore has the `isLiving` method, it works. Because of the fact that for types `T, U` where `T extends U`, it follows that `ReadBox<T> extends ReadBox<U>`, we say that `ReadBox` is *covariant* in its type parameter[^one_param]: it preserves the subtyping relationship.
 
 ## Contravariance
 
@@ -88,7 +88,7 @@ const animalBox: ListenBox<Animal> = dogBox; // If we assume ListenBox is covari
 animalBox.tell(new Cat()); // Oh no!
 ```
 
-As you can see, the answer is no. If `ListenBox<Dog> <: ListenBox<Animal>` then we can assign `dogBox` to `animalBox`. But then because `animalBox.tell` accepts `value` of type `Animal`, we can pass in a `Cat`, making the `listener` be called with a `Cat`, which does **not** have the `woof` method. 
+As you can see, the answer is no. If `ListenBox<Dog> extends ListenBox<Animal>` then we can assign `dogBox` to `animalBox`. But then because `animalBox.tell` accepts `value` of type `Animal`, we can pass in a `Cat`, making the `listener` be called with a `Cat`, which does **not** have the `woof` method. 
 
 So, `ListenBox` is not covariant in its type parameter. But we can salvage something different from this, where it turns out that whenever we want to use a `ListenBox<Dog>`, we can use a `ListenBox<Animal>` and everything works fine:
 
@@ -104,7 +104,7 @@ const catBox: ListenBox<Cat> = animalBox;
 catBox.tell(new Cat()); // Cat has isLiving.
 ```
 
-The code above works just fine when instead of saying that `ListenBox` is covariant, we say that it is *contravariant* in its type parameter. This means that for types `T, U` where `T <: U`, we have that `ListenBox<U> <: ListenBox<T>`. `U` is a supertype of `T`, the subtyping relationship is reversed, hence the "contra".
+The code above works just fine when instead of saying that `ListenBox` is covariant, we say that it is *contravariant* in its type parameter. This means that for types `T, U` where `T extends U`, we have that `ListenBox<U> extends ListenBox<T>`. `U` is a supertype of `T`, the subtyping relationship is reversed, hence the "contra".
 
 ## Invariance
 
@@ -229,7 +229,7 @@ class DogBox {
 }
 ```
 
-And we can see indeed that our `DogBox` is using the concept of variance. In the case of `get`, it is almost as if we are assigning a `Function0<Dog>` to a `Function0<Animal>`, which is valid because functions are covariant in the return type. Similarly, for `set`, it is like we are assigning `Function1<Object, void>` to `Function1<Animal, void>`, which is valid because `Animal <: Object` and functions are contravariant in the parameter types.
+And we can see indeed that our `DogBox` is using the concept of variance. In the case of `get`, it is almost as if we are assigning a `Function0<Dog>` to a `Function0<Animal>`, which is valid because functions are covariant in the return type. Similarly, for `set`, it is like we are assigning `Function1<Object, void>` to `Function1<Animal, void>`, which is valid because `Animal extends Object` and functions are contravariant in the parameter types.
 
 Note that not all languages support this. For example, Java and C# both have covariant return types but invariant parameter types. TypeScript has contravariant parameter types (in strict mode) and covariant return types.
 
@@ -264,6 +264,8 @@ Hopefully this post gives you a good understanding of what variance is in terms 
 For those interested in theory, the concept of variance comes from category theory, where one would study covariant and contravariant functors. Those who know a bit of Haskell would also encounter them there! 
 
 ---
+
+[^extends]: I'm not a huge fan of that syntax, since you don't extend interfaces, but you can still be a subtype of an interface. The better notation for this is the `<:` symbol which means "is subtype of" but that is a bit obtuse for some audiences.
 
 [^one_param]: We can say "its type parameter" because it only has one. You can imagine some type where only some parameters are covariant.
 
