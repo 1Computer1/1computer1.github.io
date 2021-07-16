@@ -239,7 +239,7 @@ Note that not all languages support this. For example, Java and C# both have cov
 
 Liskov's Substitution Principle, the L in SOLID: the principle says that if a property about a type `T` is true, then it must also be true for a subtype of `T`[^liskov]. It is from this principle that covariance and contravariance of methods were adopted in newer OOP languages.
 
-But the principle does not just apply to the types of objects that you type into the source code and is checked by the compilers. We have to consider things that are more than just the language, we have to consider things that you might instead document in a comment: refinements, preconditions, postconditions, and invariants.
+But the principle does not just apply to the types of objects that you type into the source code and is checked by the compilers. We have to consider things that are more than just the language, we have to consider things that you might instead document in a comment: preconditions, postconditions, and invariants.
 
 ### Preconditions
 
@@ -247,7 +247,7 @@ Preconditions are requirements that a method wants to be true about the state of
 
 For another example, perhaps your method takes a tuple `(Int, Int)` which must have `x^2 + y^2 = 1` (point on the circumference of the circle). A subclass can override that method and allow a weaker constraint if it wanted to, such as `x^2 + y^2 <= 1` (point on the surface of the circle). It cannot, however, allow a stronger constraint, because this would break the contravariance of method parameter types.
 
-Notice that preconditions are like inputs: contravariant.
+Notice that preconditions are analogous to the input of functions: contravariant.
 
 ### Postconditions
 
@@ -255,7 +255,7 @@ Likewise, postconditions are things about the state of the program that must be 
 
 As an example, consider a method that returns a `String` value that must be a valid email address. This means that, by return types being covariant, methods which override that method must only return `String` values that are a valid email address or stronger (perhaps, a valid Gmail address).
 
-Notice that postconditions are like outputs: covariant.
+Notice that postconditions are analogous to the output of functions: covariant.
 
 ### Invariants
 
