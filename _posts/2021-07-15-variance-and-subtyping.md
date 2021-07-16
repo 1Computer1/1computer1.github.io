@@ -231,7 +231,7 @@ class DogBox {
 
 And we can see indeed that our `DogBox` is using the concept of variance. In the case of `get`, it is almost as if we are assigning a `Function0<Dog>` to a `Function0<Animal>`, which is valid because functions are covariant in the return type. Similarly, for `set`, it is like we are assigning `Function1<Object, void>` to `Function1<Animal, void>`, which is valid because `Animal <: Object` and functions are contravariant in the parameter types.
 
-Note that not all languages support this. For example, Java and C# both have invariant parameter types but covariant return types. TypeScript has contravariant parameter types (in strict mode) and covariant return types.
+Note that not all languages support this. For example, Java and C# both have covariant return types but invariant parameter types. TypeScript has contravariant parameter types (in strict mode) and covariant return types.
 
 ## Liskov's Substitution Principle
 
