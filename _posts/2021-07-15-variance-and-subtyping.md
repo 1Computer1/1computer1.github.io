@@ -12,7 +12,7 @@ Note that this post requires an understanding of type parameters, also known as 
 
 ## Covariance
 
-Consider the following classes in a statically-typed OOP language; We will be using TypeScript syntax, but don't run it in TypeScript, it won't work.
+Consider the following classes in a statically-typed OOP language. We will be using TypeScript syntax, although they won't necessarily typecheck.
 
 ```ts
 class Animal {
@@ -136,7 +136,7 @@ dogBox.getValue().woof(); // Oh no, not again!
 
 Since `dogBox` and `animalBox` are aliases of the same `Box`, by assigning `dogBox` to `animalBox`, we are able to put a `Cat` in it via `animalBox`, which once we retrieve it later using `dogBox`, we think it's a `Dog` due to the types, but it is not[^cov_arrays].
 
-So what about contravariance? Well, it turns out all you need to due is rearrange the lines and the types and you run into the exact same problem:
+So what about contravariance? It turns out all you need to do is rearrange the it a bit and you run into the exact same problem:
 
 ```ts
 const animalBox: Box<Animal> = new Box(new Animal());
@@ -183,9 +183,11 @@ type Function3<A1, A2, A3, Ret>
 // And so on...
 ```
 
-What is the variance on these type parameters? Let's consider that we are writing the function with type `Function1<Dog, Animal>` for perhaps a callback. This means that someone else will pass us the `Dog` that we can use. But, we don't have to use all of the `Dog`, for example, we only use `isLiving`. This means that `Function1<Animal, Animal>` will also work in place of the previous type for the callback. Therefore, `Function1` is contravariant in the type of its first type parameter. Now if we consider from the perspective of the person calling our callback, they are expecting to receive an `Animal`. This means that it is perfectly fine to use a subtype of `Animal`, such as `Dog`. Therefore, `Function1` is covariant in the type of its return type parameter.
+What is the variance on these type parameters? Let's consider that we are writing the function with type `Function1<Dog, Animal>` for perhaps a callback. This means that someone else will pass us the `Dog` that we can use. But, we don't have to use all of the `Dog`, for example, we only use `isLiving`. This means that `Function1<Animal, Animal>` will also work in place of the previous type for the callback. Therefore, `Function1` is contravariant in the type of its first type parameter.
 
-In general, for functions, the types of the parameters are contravariant, while the type of the return is covariant. This leads to a guideline for the variance of type parameters in general: if a type has a value that is to be "produced", it is covariant. If it is to be "consumed", it is contravariant. If both, it is invariant; if neither, it is bivariant[^position]. You can see with our boxes that `ReadBox` only produced values via `getValue`, `ListenBox` only consumed values via `tell` and `listener`, and `Box` produced and consumed values with `getValue` and `setValue`.
+Now if we consider from the perspective of the person calling our callback, they are expecting to receive an `Animal`. This means that it is perfectly fine to use a subtype of `Animal`, such as `Dog`. Therefore, `Function1` is covariant in the type of its return type parameter.
+
+In general, for functions, the types of the parameters are contravariant, while the type of the return is covariant. This leads to a guideline for the variance of type parameters in general: if a type has a value that is to be "produced", it is covariant. If it is to be "consumed", it is contravariant. If both, it is invariant; if neither, it is bivariant[^position]. You can see with our boxes that `ReadBox` only produced values via `getValue`, `ListenBox` only consumed values via `tell` and `listener`, and `Box` both produced and consumed values with `getValue` and `setValue`.
 
 ## Variance Annotations
 
@@ -243,17 +245,17 @@ But the principle does not just apply to the types of objects that you type into
 
 When your language does not provide a way (or an easy way) to *refine* your types[^refinements], which is to make them more specific for the domain you are working on, you might instead document those refinements. For example, consider a method that returns a `String` value that must be a valid email address. This means that, by return types being covariant, methods which override that method must only return `String` values that are a valid email address or stronger (perhaps, a valid Gmail address).
 
-In the opposite direction, perhaps your method takes a tuple `(Int, Int)` which must have `x^2 + y^2 = 1`. A subclass can override that method and allow a weaker constraint if it wanted to, such as `x^2 + y^2 <= 1`. It cannot, however, allow a stronger constraint, because this would break the contravariance of method parameter types.
+In the opposite direction, perhaps your method takes a tuple `(Int, Int)` which must have `x^2 + y^2 = 1` (point on the circumference of the circle). A subclass can override that method and allow a weaker constraint if it wanted to, such as `x^2 + y^2 <= 1` (point on the surface of the circle). It cannot, however, allow a stronger constraint, because this would break the contravariance of method parameter types.
 
 ### Preconditions and Postconditions
 
-Preconditions are requirements that a method wants to be true about the state of the program before it runs. For example, you might ask that before calling `advance` on a parser that you are not at the end of the string. Preconditions are contravariant[^sets_conds]. They can only be weakened when overridden, not strengthened. You might for example have a parser implementation that allows for streaming parsing, in which case calls to `advance` may be called past the string in buffer currently.
+Preconditions are requirements that a method wants to be true about the state of the program before it runs. For example, you might ask that before calling `advance` on a parser that you are not at the end of the string. Preconditions are contravariant[^sets_conds]. They can only be weakened when overridden, not strengthened. You might for example have a parser implementation that allows for streaming parsing, in which case calls to `advance` may be called past the string in buffer currently. Strengthening a precondition would mean that someone might not satisfy all the preconditions of a method when they are programming to the superclass but receives the subclass. 
 
-Likewise, postconditions are things about the state of the program that must be true after the method runs. They are covariant, so they can only be strengthened when overridden, not weakened.
+Likewise, postconditions are things about the state of the program that must be true after the method runs. They are covariant, so they can only be strengthened when overridden, not weakened. You can imagine some code that relies on the state of the program being a certain way after running a function, and so weakening a postcondition would break the program.
 
 ### Invariants
 
-Invariants are always true statements about your program that must never be broken. You can imagine that this is, well, invariant. For example, a parser invariant could be that we never go backwards in the input of the parser.
+Invariants are always true statements about your program that must never be broken. You can imagine that this is, well, invariant: subclasses must never change the invariants. For example, a datetime class may have an invariant that the month is always between 1 and 12. You cannot weaken this to allow months out-of-range, and you cannot strengthen this to disallow users of the class from using certain months.
 
 A special type of invariant that always apply is the idea of encapsulation. It says that if a class allows its state to be modified through a set of methods, then those are the only methods that can modify that state. This means that a subclass that introduces new behavior cannot modify itself in ways that are not allowed by the superclass i.e. it must use the methods provided by the superclass to do so. This rule is called the "history rule". Of course, the subclass itself can define new mutable state and corresponding methods separately from the superclass. 
 
@@ -279,6 +281,6 @@ For those interested in theory, the concept of variance comes from category theo
 
 [^liskov]: This is indeed a pretty vague definition. The [Wikipedia page](https://en.wikipedia.org/wiki/Liskov_substitution_principle) goes much more in depth about the formalities.
 
-[^refinements]: Actually, these refinements we are referring to are usually thought of as preconditions on the parameters and postconditions on the returns. But I feel it makes more sense when looked as if they were actual types that a language just happens to not be able to express. Look up refinement types!
+[^refinements]: Actually, these refinements we are referring to are usually thought of as preconditions on the parameters and postconditions on the returns. But I feel it makes more sense when looked at as if they were actual subtypes that a language just happens to not be able to express. Look up refinement types!
 
 [^sets_conds]: You can imagine that every function type actually takes another type parameter, one for a set of preconditions, whose subtyping rules follow that of the superset relation. Likewise, postconditions would follow the subset relation.
