@@ -241,23 +241,29 @@ Liskov's Substitution Principle, the L in SOLID: the principle says that if a pr
 
 But the principle does not just apply to the types of objects that you type into the source code and is checked by the compilers. We have to consider things that are more than just the language, we have to consider things that you might instead document in a comment: refinements, preconditions, postconditions, and invariants.
 
-### Refinements
+### Preconditions
 
-When your language does not provide a way (or an easy way) to *refine* your types[^refinements], which is to make them more specific for the domain you are working on, you might instead document those refinements. For example, consider a method that returns a `String` value that must be a valid email address. This means that, by return types being covariant, methods which override that method must only return `String` values that are a valid email address or stronger (perhaps, a valid Gmail address).
+Preconditions are requirements that a method wants to be true about the state of the program before it runs. For example, you might ask that before calling `advance` on a parser that you are not at the end of the string. Preconditions are contravariant. They can only be weakened when overridden, not strengthened. You might for example have a parser implementation that allows for streaming parsing, in which case calls to `advance` may be called past the string in buffer currently. Strengthening a precondition would mean that someone might not satisfy all the preconditions of a method when they are programming to the superclass but receives the subclass. 
 
-In the opposite direction, perhaps your method takes a tuple `(Int, Int)` which must have `x^2 + y^2 = 1` (point on the circumference of the circle). A subclass can override that method and allow a weaker constraint if it wanted to, such as `x^2 + y^2 <= 1` (point on the surface of the circle). It cannot, however, allow a stronger constraint, because this would break the contravariance of method parameter types.
+For another example, perhaps your method takes a tuple `(Int, Int)` which must have `x^2 + y^2 = 1` (point on the circumference of the circle). A subclass can override that method and allow a weaker constraint if it wanted to, such as `x^2 + y^2 <= 1` (point on the surface of the circle). It cannot, however, allow a stronger constraint, because this would break the contravariance of method parameter types.
 
-### Preconditions and Postconditions
+Notice that preconditions are like inputs: contravariant.
 
-Preconditions are requirements that a method wants to be true about the state of the program before it runs. For example, you might ask that before calling `advance` on a parser that you are not at the end of the string. Preconditions are contravariant[^sets_conds]. They can only be weakened when overridden, not strengthened. You might for example have a parser implementation that allows for streaming parsing, in which case calls to `advance` may be called past the string in buffer currently. Strengthening a precondition would mean that someone might not satisfy all the preconditions of a method when they are programming to the superclass but receives the subclass. 
+### Postconditions
 
 Likewise, postconditions are things about the state of the program that must be true after the method runs. They are covariant, so they can only be strengthened when overridden, not weakened. You can imagine some code that relies on the state of the program being a certain way after running a function, and so weakening a postcondition would break the program.
+
+As an example, consider a method that returns a `String` value that must be a valid email address. This means that, by return types being covariant, methods which override that method must only return `String` values that are a valid email address or stronger (perhaps, a valid Gmail address).
+
+Notice that postconditions are like outputs: covariant.
 
 ### Invariants
 
 Invariants are always true statements about your program that must never be broken. You can imagine that this is, well, invariant: subclasses must never change the invariants. For example, a datetime class may have an invariant that the month is always between 1 and 12. You cannot weaken this to allow months out-of-range, and you cannot strengthen this to disallow users of the class from using certain months.
 
 A special type of invariant that always apply is the idea of encapsulation. It says that if a class allows its state to be modified through a set of methods, then those are the only methods that can modify that state. This means that a subclass that introduces new behavior cannot modify itself in ways that are not allowed by the superclass i.e. it must use the methods provided by the superclass to do so. This rule is called the "history rule". Of course, the subclass itself can define new mutable state and corresponding methods separately from the superclass. 
+
+Notice that invariants usually apply to things like mutable state: you can both read from and write to mutable state, so it must be invariant.
 
 # Conclusion
 
@@ -280,7 +286,3 @@ For those interested in theory, the concept of variance comes from category theo
 [^position]: This is just a guideline. It starts to become unwieldy when you have functions that are higher-order than just callbacks. For a more rigid approach, consider function parameters to be "negative" and function returns to be "positive", and that each time you introduce a type in a negative position, you invert all of the types inside. Then, types that are in only positive positions are covariant, in only negative positions are contravariant, in both are invariant, and in neither are bivariant. As an example, the type (in Haskell-like syntax) `a -> (b -> a) -> ((c -> a) -> b) -> c` becomes `-a -> (+b -> -a) -> ((-a -> +c) -> -b) -> +c` which means `a` is contravariant, `b` is invariant, and `c` is covariant.
 
 [^liskov]: This is indeed a pretty vague definition. The [Wikipedia page](https://en.wikipedia.org/wiki/Liskov_substitution_principle) goes much more in depth about the formalities.
-
-[^refinements]: Actually, these refinements we are referring to are usually thought of as preconditions on the parameters and postconditions on the returns. But I feel it makes more sense when looked at as if they were actual subtypes that a language just happens to not be able to express. Look up refinement types!
-
-[^sets_conds]: You can imagine that every function type actually takes another type parameter, one for a set of preconditions, whose subtyping rules follow that of the superset relation. Likewise, postconditions would follow the subset relation.
