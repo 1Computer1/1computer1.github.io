@@ -167,6 +167,8 @@ const dogBox2: PhantomBox<Dog> = animalBox; // Works in reversing the relationsh
 const catBox2: PhantomBox<Cat> = dogBox; // Works in doing absolutely crazy stuff!
 ```
 
+In practice, this is rarely seen in most languages[^phantom].
+
 ## Function Types
 
 To facilitate later understanding, we also want to talk about variance in function types.
@@ -266,6 +268,8 @@ For those interested in theory, the concept of variance comes from category theo
 [^one_param]: We can say "its type parameter" because it only has one. You can imagine some type where only some parameters are covariant.
 
 [^cov_arrays]: It turns out that quite a few languages (Java, C#, TypeScript, etc.) have covariant arrays. You can think of our `Box` as an array with just one item at all times. As you can see, covariant arrays are a very bad idea! They should be invariant.
+
+[^phantom]: It does have its uses! These phantom types (which TypeScript does not have) allow you do things such as tag a value at the type level or pass type information without passing the value of that type itself. Languages like Haskell and Rust make use of this, though they are not languages that have subtyping.
 
 [^ts_fn]: In TypeScript, the actual syntax for function types is `(arg: A1) => Ret`, but this syntax is not in line with the syntax with angle brackets, so we won't use it in this post.
 
