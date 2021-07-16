@@ -269,7 +269,7 @@ Notice that invariants usually apply to things like mutable state: you can both 
 
 Hopefully this post gives you a good understanding of what variance is in terms of OOP languages and how it applies to OOP design.
 
-For those interested in theory, the concept of variance comes from category theory, where one would study covariant and contravariant functors. Those who know a bit of Haskell would also encounter them there! 
+For those interested in theory, the concept of variance comes from category theory, where one would study covariant and contravariant functors. Those who know a bit of Haskell would also encounter them there! The concept of preconditions, postconditions, and invariants come from design-by-contract, but are also related to the more formal theory of refinement types: types which allow us to make them more specific for our domain.
 
 ---
 
