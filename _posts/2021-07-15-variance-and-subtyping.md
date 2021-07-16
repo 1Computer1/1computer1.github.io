@@ -6,6 +6,8 @@ tags: [Type Theory, Software Design]
 
 Variance is a concept in type systems, especially those with subtyping. Keeping variance in mind when working with advanced type-level machinery in languages is quite helpful, but it applies a lot to simpler concepts too, such as when you are designing classes and interfaces. In this post, we will get an understanding of what variance is and how we can use it to our advantage to write correct code.
 
+Note that this post requires an understanding of type parameters, also known as generics, as well as basic OOP concepts.
+
 # Variance of Type Parameters
 
 ## Covariance
@@ -102,7 +104,7 @@ const catBox: ListenBox<Cat> = animalBox;
 catBox.tell(new Cat()); // Cat has isLiving.
 ```
 
-The code above works just fine when instead of saying that `ListenBox` is covariant, we say that it is *contravariant* in its type parameter. This means that for types `T, U` where `T <: U`, we have that `ListenBox<U> <: ListenBox<T>`. The subtyping relationship is reversed, hence the "contra".
+The code above works just fine when instead of saying that `ListenBox` is covariant, we say that it is *contravariant* in its type parameter. This means that for types `T, U` where `T <: U`, we have that `ListenBox<U> <: ListenBox<T>`. `U` is a supertype of `T`, the subtyping relationship is reversed, hence the "contra".
 
 ## Invariance
 
@@ -149,7 +151,7 @@ So our `Box` is neither covariant nor contravariant. They are invariant: no matt
 
 So we looked at covariance, which preserves the subtyping relationship. We looked at contravariance, which reverses it. Then, we looked at invariance, which completely removes it. You might be wondering whether there is something that allows the type parameter to go both ways.
 
-This is known as *bivariance* and it is very spooky: it only works if there's never any values of that type parameter.
+This is known as *bivariance* and it is very spooky: it only works if there's never any values of that type parameter!
 
 ```ts
 class PhantomBox<T> {
@@ -226,6 +228,8 @@ class DogBox {
 ```
 
 And we can see indeed that our `DogBox` is using the concept of variance. In the case of `get`, it is almost as if we are assigning a `Function0<Dog>` to a `Function0<Animal>`, which is valid because functions are covariant in the return type. Similarly, for `set`, it is like we are assigning `Function1<Object, void>` to `Function1<Animal, void>`, which is valid because `Animal <: Object` and functions are contravariant in the parameter types.
+
+Note that not all languages support this. For example, Java and C# both have invariant parameter types but covariant return types. TypeScript has contravariant parameter types (in strict mode) and covariant return types.
 
 ## Liskov's Substitution Principle
 
