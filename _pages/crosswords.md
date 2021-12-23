@@ -26,7 +26,7 @@ These crosswords are usually themed 15×15 with a meta puzzle to them, ranging f
 
 # Themed Series
 
-These crosswords are themed and are larger than a mini.
+These crosswords are themed, larger than a mini, and may have irregular sizes.
 
 - [Riding a Bike](https://crosshare.org/crosswords/qtGyPJLpMP9njRDaIuP8/riding-a-bike)
 - [Midi 🍽](https://crosshare.org/crosswords/I5ZBYQWw3Cg3OcnfoP0q/midi)
@@ -37,6 +37,7 @@ These crosswords are themed and are larger than a mini.
 
 These crosswords have sizes from 5×5 to 7×7 and can be themed or themeless.
 
+- [Mini @ 4AM](https://crosshare.org/crosswords/6bqR58J7tuk2OZDRR7qG/mini-4am)
 - [Mini 🎵](https://crosshare.org/crosswords/hyRbL6ReFpoMAkyBmAhG/mini)
 - [Mini ◣](https://crosshare.org/crosswords/RosnPs6bDxZv6S9J5bha/mini)
 - [Mini!](https://crosshare.org/crosswords/f1mJgbG1tAZVvpwAidm8/mini)
