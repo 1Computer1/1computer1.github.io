@@ -3,5 +3,7 @@ main:
     url: /posts/
   - title: "Projects"
     url: /projects/
+  - title: "Crosswords"
+    url: /crosswords/
   - title: "About"
     url: /about/
