@@ -52,5 +52,6 @@ These crosswords have sizes from 5×5 to 7×7 and can be themed or themeless.
 
 These crosswords have any size, but the clues are written using only emoji!
 
+- [🇫 🇺 🇱 🇱](https://crosshare.org/crosswords/BTLbzguMECYDO2U6qDOL)
 - [🇲 🇮 🇩 🇮](https://crosshare.org/crosswords/S6zlJbpLJlOKe75cj9dh)
 - [🇲 🇮 🇳 🇮](https://crosshare.org/crosswords/7Hcctnx2UhVi7QIKEJC1)
