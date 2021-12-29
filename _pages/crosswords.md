@@ -20,6 +20,7 @@ These crosswords are themeless 15×15, usually with some grid art on top.
 
 These crosswords are usually themed 15×15 with a meta puzzle to them, ranging from simple to convoluted!
 
+- [Heart of Gold (meta)](https://crosshare.org/crosswords/JbLzfKoxjNXY0mVCTKmx/heart-of-gold-meta)
 - [Mania (meta)](https://crosshare.org/crosswords/n7R1V3K8KtdY2oxSuzCP/mania-meta)
 - [4×7×7 (meta)](https://crosshare.org/crosswords/3VCongWKoDxCbkma8OiD/477-meta)
 - [Accretion Disk (meta)](https://crosshare.org/crosswords/GSVr4tbazqTN3pxGxbHk/accretion-disk-meta)
