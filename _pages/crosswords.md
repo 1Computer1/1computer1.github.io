@@ -40,7 +40,6 @@ These crosswords are themed, larger than a mini, and may have irregular sizes.
 These crosswords have sizes from 5×5 to 7×7 and can be themed or themeless.
 
 - [Mini @ 4AM](https://crosshare.org/crosswords/6bqR58J7tuk2OZDRR7qG/mini-4am)
-- [Mini 🎵](https://crosshare.org/crosswords/hyRbL6ReFpoMAkyBmAhG/mini)
 - [Mini ◣](https://crosshare.org/crosswords/RosnPs6bDxZv6S9J5bha/mini)
 - [Mini!](https://crosshare.org/crosswords/f1mJgbG1tAZVvpwAidm8/mini)
 - [Mini Cues](https://crosshare.org/crosswords/F0f4yVMeIDbGF86yXNFE/mini-cues)
@@ -57,3 +56,10 @@ These crosswords have any size, but the clues are written using only emoji!
 - [🇫 🇺 🇱 🇱](https://crosshare.org/crosswords/BTLbzguMECYDO2U6qDOL)
 - [🇲 🇮 🇩 🇮](https://crosshare.org/crosswords/S6zlJbpLJlOKe75cj9dh)
 - [🇲 🇮 🇳 🇮](https://crosshare.org/crosswords/7Hcctnx2UhVi7QIKEJC1)
+
+# Rebus Series
+
+These crosswords use rebuses, where a cell can contain more than one letter.
+
+- [Double Trouble](https://crosshare.org/crosswords/4vJhuc5fUATtLx9FB4IE/double-trouble)
+- [Mini 🎵](https://crosshare.org/crosswords/hyRbL6ReFpoMAkyBmAhG/mini)
