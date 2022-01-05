@@ -20,6 +20,7 @@ These crosswords are themeless 15×15, usually with some grid art on top.
 
 These crosswords are usually themed 15×15 with a meta puzzle to them, ranging from simple to convoluted!
 
+- [Top-Down View (meta)](https://crosshare.org/crosswords/G4M8pUcGId5L96M8ENZJ/top-down-view-meta)
 - [Heart of Gold (meta)](https://crosshare.org/crosswords/JbLzfKoxjNXY0mVCTKmx/heart-of-gold-meta)
 - [Mania (meta)](https://crosshare.org/crosswords/n7R1V3K8KtdY2oxSuzCP/mania-meta)
 - [4×7×7 (meta)](https://crosshare.org/crosswords/3VCongWKoDxCbkma8OiD/477-meta)
@@ -29,6 +30,7 @@ These crosswords are usually themed 15×15 with a meta puzzle to them, ranging f
 
 These crosswords are themed, larger than a mini, and may have irregular sizes.
 
+- [Plug and Play](https://crosshare.org/crosswords/d0mSA42hCkQOUxhH12hH/plug-and-play)
 - [I thought it was gonna be a hit!](https://crosshare.org/crosswords/VBr1a6PNLyVhEabxG5Ob/i-thought-it-was-gonna-be-a-hit)
 - [Riding a Bike](https://crosshare.org/crosswords/qtGyPJLpMP9njRDaIuP8/riding-a-bike)
 - [Midi 🍽](https://crosshare.org/crosswords/I5ZBYQWw3Cg3OcnfoP0q/midi)
