@@ -30,6 +30,7 @@ These crosswords are usually themed 15×15 with a meta puzzle to them, ranging f
 
 These crosswords are themed, larger than a mini, and may have irregular sizes.
 
+- [Password Strength](https://crosshare.org/crosswords/prK6MXuYLkRC2WU6rfVO/password-strength)
 - [Plug and Play](https://crosshare.org/crosswords/d0mSA42hCkQOUxhH12hH/plug-and-play)
 - [I thought it was gonna be a hit!](https://crosshare.org/crosswords/VBr1a6PNLyVhEabxG5Ob/i-thought-it-was-gonna-be-a-hit)
 - [Riding a Bike](https://crosshare.org/crosswords/qtGyPJLpMP9njRDaIuP8/riding-a-bike)
