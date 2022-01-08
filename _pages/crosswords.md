@@ -41,6 +41,7 @@ These crosswords are themed, larger than a mini, and may have irregular sizes.
 
 These crosswords have sizes from 5×5 to 7×7 and can be themed or themeless.
 
+- [Mini 東方](https://crosshare.org/crosswords/soXNNOb5TMVfyEXG6OAG/mini)
 - [Mini @ 4AM](https://crosshare.org/crosswords/6bqR58J7tuk2OZDRR7qG/mini-4am)
 - [Mini ◣](https://crosshare.org/crosswords/RosnPs6bDxZv6S9J5bha/mini)
 - [Mini!](https://crosshare.org/crosswords/f1mJgbG1tAZVvpwAidm8/mini)
