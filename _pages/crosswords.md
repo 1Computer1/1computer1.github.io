@@ -30,6 +30,7 @@ These crosswords are usually themed 15×15 with a meta puzzle to them, ranging f
 
 These crosswords are themed, larger than a mini, and may have irregular sizes.
 
+- [Somewhat Meta Puzzle](https://crosshare.org/crosswords/tbwZGQyweVVPL3Kixl3u/somewhat-meta-puzzle)
 - [Midi λ](https://crosshare.org/crosswords/KlDKC2XFTqMTOlmpKyvI/midi)
 - [Plug and Play](https://crosshare.org/crosswords/d0mSA42hCkQOUxhH12hH/plug-and-play)
 - [I thought it was gonna be a hit!](https://crosshare.org/crosswords/VBr1a6PNLyVhEabxG5Ob/i-thought-it-was-gonna-be-a-hit)
@@ -42,6 +43,8 @@ These crosswords are themed, larger than a mini, and may have irregular sizes.
 
 These crosswords have sizes from 5×5 to 7×7 and can be themed or themeless.
 
+- [Mini 🌱](https://crosshare.org/crosswords/NKaDxQ1iJFGdYtiLSDjp/mini)
+- [Mini 📅](https://crosshare.org/crosswords/mlDQg3WenIRJFj2BBp3Y/mini)
 - [Mini 東方](https://crosshare.org/crosswords/soXNNOb5TMVfyEXG6OAG/mini)
 - [Mini @ 4AM](https://crosshare.org/crosswords/6bqR58J7tuk2OZDRR7qG/mini-4am)
 - [Mini ◣](https://crosshare.org/crosswords/RosnPs6bDxZv6S9J5bha/mini)
@@ -65,6 +68,7 @@ These crosswords have any size, but the clues are written using only emoji!
 
 These crosswords use rebuses, where a cell can contain more than one letter.
 
+- [98 and 7, for example](https://crosshare.org/crosswords/2ZpVLQ6w0VT8aorCibat/98-and-7-for-example)
 - [Password Strength](https://crosshare.org/crosswords/prK6MXuYLkRC2WU6rfVO/password-strength)
 - [Double Trouble](https://crosshare.org/crosswords/4vJhuc5fUATtLx9FB4IE/double-trouble)
 - [Mini 🎵](https://crosshare.org/crosswords/hyRbL6ReFpoMAkyBmAhG/mini)
