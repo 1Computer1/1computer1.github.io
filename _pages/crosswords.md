@@ -13,6 +13,7 @@ Crosswords ordered by latest first.
 
 These crosswords are themeless 15×15, usually with some grid art on top.
 
+- [Theme·less](https://crosshare.org/crosswords/w92CWkRx7EhX6Dn1nEQ8/themeless)
 - [Themeless Tulips](https://crosshare.org/crosswords/AgK7p0XqUuwjqe7ceOmV/themeless-tulips)
 - [Themeless Stripes](https://crosshare.org/crosswords/9WfICg1fL65i1sgqJqdD/themeless-stripes)
 
@@ -43,6 +44,8 @@ These crosswords are themed, larger than a mini, and may have irregular sizes.
 
 These crosswords have sizes from 5×5 to 7×7 and can be themed or themeless.
 
+- [Crosswordle+1](https://crosshare.org/crosswords/fEI4gFaKuIEelUUhY3TN/crosswordle1)
+- [Mini 📝](https://crosshare.org/crosswords/vO9CoYdxjZH6GZ1Evpmz/mini)
 - [Mini 🔫](https://crosshare.org/crosswords/6M2eR8jlxV20NKD7TeNc/mini)
 - [Mini 🐼](https://crosshare.org/crosswords/4tMfTUVrmbYzPyIPYmr6/mini)
 - [Mini 🥶](https://crosshare.org/crosswords/txccOnwpnRaVERefEL35/mini)
