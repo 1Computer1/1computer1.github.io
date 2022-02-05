@@ -44,7 +44,6 @@ These crosswords are themed, larger than a mini, and may have irregular sizes.
 
 These crosswords have sizes from 5×5 to 7×7 and can be themed or themeless.
 
-- [Crosswordle+1](https://crosshare.org/crosswords/fEI4gFaKuIEelUUhY3TN/crosswordle1)
 - [Mini 📝](https://crosshare.org/crosswords/vO9CoYdxjZH6GZ1Evpmz/mini)
 - [Mini 🔫](https://crosshare.org/crosswords/6M2eR8jlxV20NKD7TeNc/mini)
 - [Mini 🐼](https://crosshare.org/crosswords/4tMfTUVrmbYzPyIPYmr6/mini)
@@ -61,6 +60,14 @@ These crosswords have sizes from 5×5 to 7×7 and can be themed or themeless.
 - [Mini with no theme](https://crosshare.org/crosswords/EQ7nxPY4ECfvCuoe0s6q/mini-with-no-theme)
 - [Mini=Q](https://crosshare.org/crosswords/pALB70GsjkBIH82vcoeJ/miniq)
 - [Mini~](https://crosshare.org/crosswords/8V8wTj8Lk8v67kr60qWp/mini)
+
+# Crosswordle Series
+
+These crosswords, once you solve them, also have a Wordle puzzle to solve!
+
+- [Crosswordle²](https://crosshare.org/crosswords/F95Jh8Kj2ifhkAWK4zjK/crosswordle)
+- [Crosswordle+2](https://crosshare.org/crosswords/ILAaW8fywjlHVwLGMSQO/crosswordle2)
+- [Crosswordle+1](https://crosshare.org/crosswords/fEI4gFaKuIEelUUhY3TN/crosswordle1)
 
 # Emoji Series
 
