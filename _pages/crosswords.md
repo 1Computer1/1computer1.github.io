@@ -31,6 +31,8 @@ These crosswords are usually themed 15×15 with a meta puzzle to them, ranging f
 
 These crosswords are themed, larger than a mini, and may have irregular sizes.
 
+- [Midi 🗺](https://crosshare.org/crosswords/wTg151MdUIMAPb119GAk/midi)
+- [Midλx.x](https://crosshare.org/crosswords/74qJN2OAlMZIRYXBhREE/midxx)
 - [Somewhat Meta Puzzle](https://crosshare.org/crosswords/tbwZGQyweVVPL3Kixl3u/somewhat-meta-puzzle)
 - [Midi λ](https://crosshare.org/crosswords/KlDKC2XFTqMTOlmpKyvI/midi)
 - [Plug and Play](https://crosshare.org/crosswords/d0mSA42hCkQOUxhH12hH/plug-and-play)
