@@ -31,6 +31,7 @@ These crosswords are usually themed 15×15 with a meta puzzle to them, ranging f
 
 These crosswords are themed, larger than a mini, and may have irregular sizes.
 
+- [Valentine's Day Midi 💐🍫](https://crosshare.org/crosswords/zKtciR7TQgybNFEXbOY1/valentines-day-midi)
 - [Midi 🗺](https://crosshare.org/crosswords/wTg151MdUIMAPb119GAk/midi)
 - [Midλx.x](https://crosshare.org/crosswords/74qJN2OAlMZIRYXBhREE/midxx)
 - [Somewhat Meta Puzzle](https://crosshare.org/crosswords/tbwZGQyweVVPL3Kixl3u/somewhat-meta-puzzle)
@@ -46,6 +47,7 @@ These crosswords are themed, larger than a mini, and may have irregular sizes.
 
 These crosswords have sizes from 5×5 to 7×7 and can be themed or themeless.
 
+- [Mini 🎙](https://crosshare.org/crosswords/cWsVxrFSRlmqBOATrPyA/mini)
 - [Mini 📝](https://crosshare.org/crosswords/vO9CoYdxjZH6GZ1Evpmz/mini)
 - [Mini 🔫](https://crosshare.org/crosswords/6M2eR8jlxV20NKD7TeNc/mini)
 - [Mini 🐼](https://crosshare.org/crosswords/4tMfTUVrmbYzPyIPYmr6/mini)
