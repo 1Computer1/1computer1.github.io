@@ -65,10 +65,18 @@ These crosswords have sizes from 5×5 to 7×7 and can be themed or themeless.
 - [Mini=Q](https://crosshare.org/crosswords/pALB70GsjkBIH82vcoeJ/miniq)
 - [Mini~](https://crosshare.org/crosswords/8V8wTj8Lk8v67kr60qWp/mini)
 
+# Cryptic Series
+
+These crosswords use cryptic clues that include hidden wordplay!
+
+- [Cryptic Two](https://crosshare.org/crosswords/b50nMPjhEd121Rfa8jJN/cryptic-two)
+- [Cryptic One](https://crosshare.org/crosswords/kMPCeu79qk9zjA39JQlN/cryptic-one)
+
 # Crosswordle Series
 
 These crosswords, once you solve them, also have a Wordle puzzle to solve!
 
+- [Crosswordle+3](https://crosshare.org/crosswords/bEdMiHevPhZGhP8yh8ET/crosswordle3)
 - [Crosswordle²](https://crosshare.org/crosswords/F95Jh8Kj2ifhkAWK4zjK/crosswordle)
 - [Crosswordle+2](https://crosshare.org/crosswords/ILAaW8fywjlHVwLGMSQO/crosswordle2)
 - [Crosswordle+1](https://crosshare.org/crosswords/fEI4gFaKuIEelUUhY3TN/crosswordle1)
