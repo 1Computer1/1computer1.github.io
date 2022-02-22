@@ -69,6 +69,7 @@ These crosswords have sizes from 5×5 to 7×7 and can be themed or themeless.
 
 These crosswords use cryptic clues that include hidden wordplay!
 
+- [Cryptic Three](https://crosshare.org/crosswords/bCgZoKvtQx4CHWikU9Il/cryptic-three)
 - [Cryptic Two](https://crosshare.org/crosswords/b50nMPjhEd121Rfa8jJN/cryptic-two)
 - [Cryptic One](https://crosshare.org/crosswords/kMPCeu79qk9zjA39JQlN/cryptic-one)
 
