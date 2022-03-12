@@ -31,6 +31,7 @@ These crosswords are usually themed 15×15 with a meta puzzle to them, ranging f
 
 These crosswords are themed, larger than a mini, and may have irregular sizes.
 
+- [Midi 🚀](https://crosshare.org/crosswords/LzXjse61wYV5J9xN77vm/midi)
 - [Valentine's Day Midi 💐🍫](https://crosshare.org/crosswords/zKtciR7TQgybNFEXbOY1/valentines-day-midi)
 - [Midi 🗺](https://crosshare.org/crosswords/wTg151MdUIMAPb119GAk/midi)
 - [Midλx.x](https://crosshare.org/crosswords/74qJN2OAlMZIRYXBhREE/midxx)
@@ -47,6 +48,12 @@ These crosswords are themed, larger than a mini, and may have irregular sizes.
 
 These crosswords have sizes from 5×5 to 7×7 and can be themed or themeless.
 
+- [Mini 📦](https://crosshare.org/crosswords/xVNJp4hiRX5eI47opgNO/mini)
+- [Touch Grace](https://crosshare.org/crosswords/PjkwvrvdQ1CRDneR61Vi/touch-grace)
+- [Mini Like](https://crosshare.org/crosswords/6QiX8CnrJJdrGZ6IRknE/mini-like)
+- [Mini 🏃‍♀️💨](https://crosshare.org/crosswords/nOiDxoeCVUSr6cP4Useh/mini)
+- [Mini 💪](https://crosshare.org/crosswords/k90LN322QuvLG3adQ0d9/mini)
+- [Mini Horror](https://crosshare.org/crosswords/opvIwFpy6ocYlMlehshM/mini-horror)
 - [Mini 🎙](https://crosshare.org/crosswords/cWsVxrFSRlmqBOATrPyA/mini)
 - [Mini 📝](https://crosshare.org/crosswords/vO9CoYdxjZH6GZ1Evpmz/mini)
 - [Mini 🔫](https://crosshare.org/crosswords/6M2eR8jlxV20NKD7TeNc/mini)
