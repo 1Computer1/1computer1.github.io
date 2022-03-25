@@ -11,8 +11,10 @@ Crosswords ordered by latest first.
 
 # Themeless Series
 
-These crosswords are themeless 15×15, usually with some grid art on top.
+These crosswords are themeless, sometimes with some grid art on top.
 
+- [Words are good](https://crosshare.org/crosswords/PFd2UCqgn8sYmKbS8Wk5/words-are-good)
+- [Just a 9x9](https://crosshare.org/crosswords/VKObMCQecEa07PlD7YEC/just-a-9x9)
 - [Theme·less](https://crosshare.org/crosswords/w92CWkRx7EhX6Dn1nEQ8/themeless)
 - [Themeless Tulips](https://crosshare.org/crosswords/AgK7p0XqUuwjqe7ceOmV/themeless-tulips)
 - [Themeless Stripes](https://crosshare.org/crosswords/9WfICg1fL65i1sgqJqdD/themeless-stripes)
@@ -31,6 +33,7 @@ These crosswords are usually themed 15×15 with a meta puzzle to them, ranging f
 
 These crosswords are themed, larger than a mini, and may have irregular sizes.
 
+- [High-Tech Midi 👩‍💻](https://crosshare.org/crosswords/TSg8XfuB2m1J8EswWvHh/high-tech-midi)
 - [Midi 🚀](https://crosshare.org/crosswords/LzXjse61wYV5J9xN77vm/midi)
 - [Valentine's Day Midi 💐🍫](https://crosshare.org/crosswords/zKtciR7TQgybNFEXbOY1/valentines-day-midi)
 - [Midi 🗺](https://crosshare.org/crosswords/wTg151MdUIMAPb119GAk/midi)
