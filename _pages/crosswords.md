@@ -13,6 +13,7 @@ Crosswords ordered by latest first.
 
 These crosswords are themeless, sometimes with some grid art on top.
 
+- [9x9 with long entries](https://crosshare.org/crosswords/yAjzlPjKk1cjgliCt6qk/9x9-with-long-entries)
 - [Words are good](https://crosshare.org/crosswords/PFd2UCqgn8sYmKbS8Wk5/words-are-good)
 - [Just a 9x9](https://crosshare.org/crosswords/VKObMCQecEa07PlD7YEC/just-a-9x9)
 - [Theme·less](https://crosshare.org/crosswords/w92CWkRx7EhX6Dn1nEQ8/themeless)
@@ -33,6 +34,7 @@ These crosswords are usually themed 15×15 with a meta puzzle to them, ranging f
 
 These crosswords are themed, larger than a mini, and may have irregular sizes.
 
+- [Midigascar 🏝](https://crosshare.org/crosswords/8u7exq2wQWCOPSgUwKzD/midigascar)
 - [High-Tech Midi 👩‍💻](https://crosshare.org/crosswords/TSg8XfuB2m1J8EswWvHh/high-tech-midi)
 - [Midi 🚀](https://crosshare.org/crosswords/LzXjse61wYV5J9xN77vm/midi)
 - [Valentine's Day Midi 💐🍫](https://crosshare.org/crosswords/zKtciR7TQgybNFEXbOY1/valentines-day-midi)
@@ -51,6 +53,9 @@ These crosswords are themed, larger than a mini, and may have irregular sizes.
 
 These crosswords have sizes from 5×5 to 7×7 and can be themed or themeless.
 
+- [Mini 985](https://crosshare.org/crosswords/ek1qBCCFxIEAldCERlG0/mini-985)
+- [Steely Mini](https://crosshare.org/crosswords/ZRsRnSSklzq8TnFdIXPT/steely-mini)
+- [Beat the devil out of it!](https://crosshare.org/crosswords/ReMov3xxgicgq7cM3ZCW/beat-the-devil-out-of-it)
 - [Mini 📦](https://crosshare.org/crosswords/xVNJp4hiRX5eI47opgNO/mini)
 - [Touch Grace](https://crosshare.org/crosswords/PjkwvrvdQ1CRDneR61Vi/touch-grace)
 - [Mini Like](https://crosshare.org/crosswords/6QiX8CnrJJdrGZ6IRknE/mini-like)
@@ -87,6 +92,7 @@ These crosswords use cryptic clues that include hidden wordplay!
 
 These crosswords, once you solve them, also have a Wordle puzzle to solve!
 
+- [Crosswordle+4](https://crosshare.org/crosswords/BukZt83VWmDQwM8KeoSd/crosswordle4)
 - [Crosswordle+3](https://crosshare.org/crosswords/bEdMiHevPhZGhP8yh8ET/crosswordle3)
 - [Crosswordle²](https://crosshare.org/crosswords/F95Jh8Kj2ifhkAWK4zjK/crosswordle)
 - [Crosswordle+2](https://crosshare.org/crosswords/ILAaW8fywjlHVwLGMSQO/crosswordle2)
