@@ -34,6 +34,7 @@ These crosswords are usually themed 15×15 with a meta puzzle to them, ranging f
 
 These crosswords are themed, larger than a mini, and may have irregular sizes.
 
+- [Cross-Section](https://crosshare.org/crosswords/18TukQklUJZrpdJM7UyD/cross-section)
 - [Midigascar 🏝](https://crosshare.org/crosswords/8u7exq2wQWCOPSgUwKzD/midigascar)
 - [High-Tech Midi 👩‍💻](https://crosshare.org/crosswords/TSg8XfuB2m1J8EswWvHh/high-tech-midi)
 - [Midi 🚀](https://crosshare.org/crosswords/LzXjse61wYV5J9xN77vm/midi)
